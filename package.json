@@ -1,0 +1,41 @@
+{
+  "name": "tejindustries-frontend",
+  "version": "1.0.0",
+  "description": "Portfolio for tej agro",
+  "keywords": [
+    "tejindrustries",
+    "tej",
+    "agro"
+  ],
+  "homepage": "https://github.com/AjinkyaSalunke22/TejIndustries-Backend#readme",
+  "bugs": {
+    "url": "https://github.com/AjinkyaSalunke22/TejIndustries-Backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjinkyaSalunke22/TejIndustries-Backend.git"
+  },
+  "license": "ISC",
+  "author": "Ajinkya Salunke",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "moment-timezone": "^0.5.48",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.13.2",
+    "morgan": "^1.10.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
