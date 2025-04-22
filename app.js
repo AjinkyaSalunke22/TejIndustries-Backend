@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/tej-industries-server-health", (req, res) => {
     logger.info("START - /tej-industries-server-health endpoint");
-    standardResponse(res, 200, true, "Your server is healthy.", null, null);
+    standardResponse(res, 200, true, "TejIndustries: server is healthy.", null, null);
     logger.info("END - /tej-industries-server-health endpoint");
 });
 
