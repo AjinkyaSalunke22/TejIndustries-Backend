@@ -61,8 +61,8 @@ app.get("/tej-industries-db-status", async (req, res) => {
   
 
 // Import and use centralized routes
-// const routes = require("./app/routes");
-// app.use("/api", routes); 
+const routes = require("./app/routes");
+app.use("/api", routes); 
 
 app.use((req, res, next) => {
     logger.warn(`Endpoint not found: ${req.method} ${req.originalUrl}`);
