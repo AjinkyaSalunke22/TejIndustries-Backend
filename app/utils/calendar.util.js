@@ -12,7 +12,7 @@ const createCalendarEvent = async (eventData) => {
     const calendar = google.calendar({ version: 'v3', auth });
     
     const { name, mobile, date, time } = eventData;
-    const startDateTime = new Date(`${date}T${time}:00`);
+    const startDateTime = new Date(`${date}T${time}:00+05:30`); // IST timezone
     const endDateTime = new Date(startDateTime.getTime() + 60 * 60 * 1000); // 1 hour duration
 
     const event = {
