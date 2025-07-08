@@ -10,10 +10,7 @@ const { standardResponse } = require("./app/utils/standardResponse.util");
 const app = express();
 
 app.use(helmet()); 
-app.use(cors({
-  origin: ['https://tejindustries.netlify.app', 'http://localhost:3000'],
-  credentials: true
-})); 
+app.use(cors()); 
 app.use(morgan("combined")); 
 
 app.use(express.json());
